@@ -1,6 +1,6 @@
 # 🧩 Sudoku Solver Web App
 
-This project is a React-based **Sudoku Solver** that allows users to input Sudoku puzzles and solve them instantly using a backtracking algorithm. It features a clean, responsive UI and demonstrates both frontend and algorithmic skills.
+This is a React-based Sudoku Solver app that allows users to input puzzles and instantly solve them using a backtracking algorithm. Built with clean UI and strong logic, it's perfect for showcasing your frontend + algorithmic skills.
 
 ---
 
@@ -12,9 +12,8 @@ This project is a React-based **Sudoku Solver** that allows users to input Sudok
 
 ## 📸 Screenshot
 
-[Sudoku Solver Screenshot](./sudoku solver.pdf)
+![Sudoku Solver Screenshot](./sudoku solver.pdf)
 
----
 
 ## 💼 Project Description
 
@@ -26,21 +25,18 @@ Integrated a backtracking algorithm in JavaScript to efficiently solve Sudoku pu
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 How to Play & Test
 
-- ✅ React.js
-- ✅ JavaScript
-- ✅ HTML5 / CSS3
-- ✅ Backtracking Algorithm
-
----
-
-## 💡 Features
-
-- 9×9 dynamic Sudoku grid
-- User input for each cell (numbers 1–9)
-- Real-time solving using a classic algorithm
-- Responsive layout and clean design
+1. Open the app in browser
+2. Fill puzzle values:
+3. Leave other cells blank (0 or empty).
+4. Click **"Solve Sudoku"**
+5. If working, the grid fills with correct solution 🎉
 
 ---
+
+
+
+
+
 
