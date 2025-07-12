@@ -10,9 +10,9 @@ This is a React-based Sudoku Solver app that allows users to input puzzles and i
 
 ---
 
-## 📸 Screenshot
+## 📸 Output
 
-![Sudoku Solver Screenshot](./sudoku solver.pdf)
+📄 [View demo output PDF](./sudoku%20solver.pdf)
 
 
 ## 💼 Project Description
