@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import SudokuBoard from './components/SudokuBoard';
+import { solveSudoku } from './components/Solver';
 import './App.css';
 
-function App() {
+const App = () => {
+  const emptyBoard = Array(9).fill(null).map(() => Array(9).fill(0));
+  const [board, setBoard] = useState(emptyBoard);
+
+  const handleInputChange = (e, row, col) => {
+    const value = parseInt(e.target.value) || 0;
+    const newBoard = [...board];
+    newBoard[row][col] = value;
+    setBoard(newBoard);
+  };
+
+  const handleSolve = () => {
+    const newBoard = board.map(row => [...row]);
+    if (solveSudoku(newBoard)) {
+      setBoard(newBoard);
+    } else {
+      alert("❌ No solution found.");
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>🧩 Sudoku Solver</h1>
+      <SudokuBoard board={board} handleInputChange={handleInputChange} />
+      <button className="solve-button" onClick={handleSolve}>Solve Sudoku</button>
     </div>
   );
-}
+};
 
 export default App;
