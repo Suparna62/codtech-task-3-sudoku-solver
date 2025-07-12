@@ -12,7 +12,7 @@ This project is a React-based **Sudoku Solver** that allows users to input Sudok
 
 ## 📸 Screenshot
 
-![Sudoku Solver Screenshot](./sudoku solver.pdf)
+[Sudoku Solver Screenshot](./sudoku solver.pdf)
 
 ---
 
